@@ -1,6 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation  from './components/Navigation/Navigation';
+import Promocoes from './components/Navigation/Promocoes';
+import ListaDePromocao from './components/Navigation/ListaDePromocao';
 
 
 function App() {
@@ -13,15 +15,12 @@ function App() {
         <p>
           Bem vindo ao <code>Paulista Hortifruti</code>
         </p>
-        <a
-          className="App-link"
-          href="/feira"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           Mais saude na sua mesa.
-        </a>
       </header>
+      <body>
+        <Promocoes />
+          <ListaDePromocao />
+      </body>
     </div>
   );
 }
