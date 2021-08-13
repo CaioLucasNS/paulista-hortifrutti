@@ -9,8 +9,8 @@ const Navigation = () => {
         <Navbar.Brand href="#home">
           <img
             src={logo}
-            width="50"
-            height="50"
+            width="100"
+            height="100"
             className="d-inline-block align-top"
             alt="Paulista Hortifruti Logo"
           />

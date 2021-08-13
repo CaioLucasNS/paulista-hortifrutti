@@ -19,32 +19,17 @@ function App() {
     <>
       <Navigation />
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/menu">Menu</Link>
-              </li>
-              <li>
-                <Link to="/cart">Carrinho</Link>
-              </li>
-            </ul>
-          </nav>
-          <Switch>
-            <Route path="/menu">
-              <Menu />
-            </Route>
-            <Route path="/cart">
-              <Cart />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/menu">
+            <Menu />
+          </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Router>
     </>
   );
