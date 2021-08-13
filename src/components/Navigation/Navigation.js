@@ -1,34 +1,33 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import './Navigation.css'
 
 const Navigation = () => {
   return (
     <>
       <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-        <Container>
           <Navbar.Brand href="#home">
-          {/*<img
+          <img
               src="/logo.png"
               width="10"
               height="10"
               className="d-inline-block align-top"
               alt="Paulista Hortifruti Logo"
-          />*/}
+          />
           </Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav' >
-            <Nav>
-              <Nav.Link href='/frutas'>Frutas</Nav.Link>
-              <Nav.Link href='/legumes'>Legumes</Nav.Link>
-              <Nav.Link href='/ovos'>Ovos</Nav.Link>
-              <Nav.Link href='/temperos'>Temperos</Nav.Link>
-              <Nav.Link href='/verdura'>Verdura</Nav.Link>
-              <Nav.Link href='/mercearia'>Mercearia</Nav.Link>
+            <Nav className="mx-auto" activeKey="/home">
+              <Nav.Item>
+                <Nav.Link href="/home">Frutas</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/home">Legumes</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/home">Verduras</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/home">Mercearia</Nav.Link>
+              </Nav.Item>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
       </Navbar>
     </>
   );
